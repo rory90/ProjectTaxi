@@ -33,13 +33,13 @@ public class MainView {
 		CabDb cabDao = new CabDbImpl();
 		cabDao.addCab(cab1);
 		
-		
+		/*
 		//---- Unit Testing of Booking
 		Booking book1 = new Booking();
 		BookCab bookCab = new BookCab();
 		bookCab.bookCab(8, 691736);
 		
-		
+		*/
 	        
 	    
 		

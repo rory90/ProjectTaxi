@@ -7,9 +7,9 @@ import java.sql.SQLException;
 public class DbUtil {
 	
 	String driverClassName = "com.mysql.jdbc.Driver";
-	String connectionUrl = "jdbc:mysql://localhost:3306/cmsdb";
+	String connectionUrl = "jdbc:mysql://localhost:3306/Taxi";
 	String dbUser = "root";
-	String dbPwd = "root";
+	String dbPwd = "rory123";
 
 	private static DbUtil dbUtil = null;
 
