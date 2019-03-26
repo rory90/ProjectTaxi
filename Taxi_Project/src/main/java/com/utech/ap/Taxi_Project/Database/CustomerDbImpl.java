@@ -7,7 +7,7 @@ import java.sql.SQLException;
 import com.utech.ap.Taxi_Project.Entity.Customer;
 import com.utech.ap.Taxi_Project.Helper.DbUtil;
 
-public class CustomerDbImpl {
+public class CustomerDbImpl  implements CustomerDb{
 
 	
 	Connection connection = null;
