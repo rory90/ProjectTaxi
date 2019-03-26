@@ -10,7 +10,7 @@ import java.sql.Statement;
 import com.utech.ap.Taxi_Project.Entity.Cab;
 import com.utech.ap.Taxi_Project.Helper.DbUtil;
 
-public class CabDbImpl {
+public class CabDbImpl implements CabDb {
 
 	
 	Connection connection = null;
