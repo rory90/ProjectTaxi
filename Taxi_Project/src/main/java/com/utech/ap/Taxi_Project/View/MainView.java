@@ -20,48 +20,62 @@ public class MainView {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		
+	
 			//--- Unit Testing of Customer
+		Customer customer3 = new Customer(691000, "Andre Sutherland");
+		Customer customer4 = new Customer(691001, "Ray Stephens");
+		CustomerDb customerdb = new CustomerDbImpl();
+		customerdb.addCustomer(customer3);
+		CustomerDb customerS = new CustomerDbImpl();
+		customerS.addCustomer(customer4);
+		
+	
+		/*
+		//--- Unit Testing of Cab
+		Cab cab1 = new Cab(12,"Aman Hooda");
+		CabDb cabDao = new CabDbImpl();
+		cabDao.addCab(cab1);
+		
+		
 		Customer customer1 = new Customer(691736, "Andre Steele");
 		Customer customer2 = new Customer(691740, "Ray Raymano");
 		CustomerDb customerdb = new CustomerDbImpl();
 		customerdb.addCustomer(customer1);
+		CustomerDb customerS = new CustomerDbImpl();
+		customerS.addCustomer(customer2);
 		
+	
+		//----Booking
 		
-		//--- Unit Testing of Cab
-		Cab cab1 = new Cab(103,"Aman Hooda");
-		CabDb cabDao = new CabDbImpl();
-		cabDao.addCab(cab1);
-		
-		/*
-		//---- Unit Testing of Booking
-		Booking book1 = new Booking();
 		BookCab bookCab = new BookCab();
 		bookCab.bookCab(8, 691736);
 		
-		*/
+		BookCab bookcab = new BookCab();
+	       bookcab.bookCab(1, 691740);
+	       
+		
 	        
 	    
-		
+		   
 			ChangeStatus changeStatus = new ChangeStatus();
 			changeStatus.updateStatus(101, true);
-			changeStatus.updateStatus(102, true);
-			changeStatus.updateStatus(103, true);
+		
 			
+		
+		//--- Unit Testing of Cab
+				Cab cab1 = new Cab(1,"Roger Angus");
+				CabDb cabDao = new CabDbImpl();
+				cabDao.addCab(cab1);
 			
-			
+			*/
+		
 			BookingHelperDb bookinghelper = new BookingHelperDbImpl();
 		System.out.println(bookinghelper.getBookingId());
 
 			
-		
-	        BookCab bookcab = new BookCab();
+			
 	       
-	        bookcab.bookCab(9, 691740);
-	        bookcab.bookCab(4, 691743);
-	        bookcab.bookCab(3, 691732);
 	        
-
 		
 	}
 

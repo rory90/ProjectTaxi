@@ -6,8 +6,8 @@ import java.sql.SQLException;
 
 public class DbUtil {
 	
-	String driverClassName = "com.mysql.jdbc.Driver";
-	String connectionUrl = "jdbc:mysql://localhost:3306/Taxi";
+	String driverClassName = "com.mysql.cj.jdbc.Driver";
+	String connectionUrl = "jdbc:mysql://localhost:3306/Taxi?autoReconnect=true&useSSL=false";
 	String dbUser = "root";
 	String dbPwd = "rory123";
 
