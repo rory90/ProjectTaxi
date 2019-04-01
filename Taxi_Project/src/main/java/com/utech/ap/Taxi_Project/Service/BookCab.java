@@ -25,7 +25,7 @@ public class BookCab {
 	if(cabId!=0) {
 		
 		Booking book = new Booking();
-		bookinghelperdb.setBookingId(); //incrementing ID indb
+		bookinghelperdb.setBookingId(); //incrementing ID 
 		book.setBookingId(bookinghelperdb.getBookingId());//fetching id from db
 		
 		book.setDistance(distance);
@@ -44,8 +44,8 @@ public class BookCab {
 		}
 		else 	book.setBillingAmount(100);
 		
-		// invoke db methods
-		//update booking details to the db
+		// invoke database methods
+		//update booking details to the database
 		BookingDb bookingdb = new BookingDbImpl();
 		bookingdb.addBooking(book);
 		
