@@ -87,6 +87,27 @@
     				 <artifactId>javax.persistence-api</artifactId>
    					 <version>2.2</version>
 				</dependency>
+				
+				<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
+				<dependency>
+    				<groupId>org.hibernate</groupId>
+    				<artifactId>hibernate-core</artifactId>
+    				<version>5.4.2.Final</version>
+				</dependency>
+				
+				<!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
+				<dependency>
+  				  <groupId>org.springframework</groupId>
+    			  <artifactId>spring-context</artifactId>
+    			 <version>2.0.5</version>
+				</dependency>
+				
+				<!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
+				<dependency>
+    				<groupId>org.springframework</groupId>
+    				<artifactId>spring-context</artifactId>
+   				    <version>5.1.6.RELEASE</version>
+				</dependency>
 			
 
 
