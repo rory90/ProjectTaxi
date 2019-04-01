@@ -1,42 +1,54 @@
 package com.utech.ap.Taxi_Project.Entity;
-
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+@Entity(name="ata_tbl_Cab")
 public class Cab {
 	
-	private int cabId;
-	private String driverName;
-	private boolean avalability;
+	@Column(name="Cab_name")
+	private String cabName;
+	@Id
+	@Column(name="cab_number")
+	private String cabNumber;
+	@Column(name="seating_capacity")
+	private int seatingCapacity;
+	@Column(name="vehicle_type")
+	private String vehicleType;
+	@Column(name="fare_per_km")
+	private float farePerKM;
+	
+	public String getCabName() {
+		return cabName;
+	}
+	public void setCabName(String cabName) {
+		this.cabName = cabName;
+	}
+	public String getCabNumber() {
+		return cabNumber;
+	}
+	public void setCabNumber(String cabNumber) {
+		this.cabNumber = cabNumber;
+	}
+	public int getSeatingCapacity() {
+		return seatingCapacity;
+	}
+	public void setSeatingCapacity(int seatingCapacity) {
+		this.seatingCapacity = seatingCapacity;
+	}
+	public String getVehicleType() {
+		return vehicleType;
+	}
+	public void setVehicleType(String vehicleType) {
+		this.vehicleType = vehicleType;
+	}
+	public float getFarePerKM() {
+		return farePerKM;
+	}
+	public void setFarePerKM(float farePerKM) {
+		this.farePerKM = farePerKM;
+	}
 	
 	
-	public Cab(int cabId, String driverName) {
-		this.cabId = cabId;
-		this.driverName = driverName;
-		this.avalability = true;
-	}
-
-	public int getCabId() {
-		return cabId;
-	}
-	
-	public String getDriverName() {
-		return driverName;
-	}
-	
-	public void setDriverName(String driverName) {
-		this.driverName = driverName;
-	}
-	
-	public boolean isAvalability() {
-		return avalability;
-	}
-
-	public void setAvalability(boolean avalability) {
-		this.avalability = avalability;
-	}
-
-	@Override
-	public String toString() {
-		return "Cab [cabId=" + cabId + ", driverName=" + driverName + ", avalability=" + avalability + "]";
-	}
 
 	
 	
