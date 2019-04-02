@@ -29,7 +29,7 @@ public class DriverService {
 				||da.getFirstLineOfAddress()==null
 				||da.getSecondLineOfAddress()==null
 				||da.getCity()==null
-			    ||da.getState()==null
+			    ||da.getParish()==null
 			    ||da.getPinCode()==null){
 			return "FAIL";
 		}

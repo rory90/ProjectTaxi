@@ -51,10 +51,10 @@ public class DriverAddress {
 	public void setCity(String city) {
 		this.city = city;
 	}
-	public String getState() {
+	public String getParish() {
 		return state;
 	}
-	public void setState(String state) {
+	public void setParish(String state) {
 		this.state = state;
 	}
 	public String getPinCode() {

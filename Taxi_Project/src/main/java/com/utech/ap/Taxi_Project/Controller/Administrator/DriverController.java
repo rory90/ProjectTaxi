@@ -63,7 +63,7 @@ public class DriverController {
 				return model;
 		}
 		dabean.setPinCode(map.get("pinCode"));
-		dabean.setState(map.get("state"));
+		dabean.setParish(map.get("state"));
 		System.out.println(map.get("state"));
 		String result=driverservice.addDriver(driver, dabean);
 		System.out.println(result);
@@ -136,7 +136,7 @@ public class DriverController {
 				return model;
 		}
 		da.setPinCode(map.get("pinCode"));
-		da.setState(map.get("state"));
+		da.setParish(map.get("state"));
 
 		if(driverservice.modifyDriver(driver, da).equals("SUCCESS")){
 			ModelAndView model = new ModelAndView("Admin");
@@ -197,7 +197,7 @@ public class DriverController {
 				return model;
 		}
 		dabean.setPinCode(map.get("pinCode"));
-		dabean.setState(map.get("state"));
+		dabean.setParish(map.get("state"));
 
 		if(driverservice.deleteDriver(driverbean, dabean).equals("SUCCESS")){
 			ModelAndView model = new ModelAndView("Admin");
