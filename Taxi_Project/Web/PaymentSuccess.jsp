@@ -12,20 +12,14 @@ Tutor: Gilroy Gordon
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Modify Driver </title>
+<title>Payment Success</title>
 </head>
-<body bgcolor=CadetBlue>
+<body bgcolor=CadetBlue >
 <div style="text-align:center; padding:5px;background-color: Teal;">
-<h1 align="center">Welcome to Hill Top Travel Agency</h1>
-<h2 align="center">Please give vehicle number</h2>
+<h1 align="center">Welcome <%=session.getAttribute("loginid") %></h1>
+<h1 align="center">Welcome to Hill Top Travel Agency </h1>
 </div>
-<div align="center">
-<h3 align="center" style="color: red;">${warning}</h3>
-<form action="modifymaindriver" method="post">
-Vehicle Number <input type="text" name="CabNumber"></input>
-<input type="submit" value="submit">
-</form>
-</div>
-<a href="home">GO to home</a>
+<h1>${message}</h1>
+<a href="customerhome">GO to home</a>
 </body>
 </html>
