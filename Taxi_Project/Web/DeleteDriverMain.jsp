@@ -42,7 +42,7 @@ Tutor: Gilroy Gordon
 <tr><td>First Line Of Address</td><td><input type="text" name="firstLineOfAddress" value=<%=da.getFirstLineOfAddress() %>></tr>
 <tr><td>Second Line Of Address</td><td><input type="text" name=secondLineOfAddress value=<%=da.getSecondLineOfAddress() %> ></td></tr>
 <tr><td>City</td><td><input type="text" name=city value=<%=da.getCity() %>></td></tr>
-<tr><td>Parish</td><td><input type="text" name=parish value=<%=da.getState() %>></td></tr>
+<tr><td>Parish</td><td><input type="text" name=parish value=<%=da.getParish() %>></td></tr>
 <tr><td>Pin Code</td><td><input type="text" name=pinCode value=<%=da.getPinCode() %>></td></tr>
 <tr><td></td><td><input type="submit" value="Confirm Delete Driver"></td></tr>
 </table>
